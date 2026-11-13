@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>azkyl — profile</title>
+  <title>ren — profile</title>
   <style>
     /* Page Background & Font */
     body {
@@ -96,7 +96,7 @@
     h1.username {
       text-align: center;
       font-size: 32px;
-      margin: 5px 0 15px 0;
+      margin: 5px 0 10px 0;
       color: #8f7ab8;
       letter-spacing: 1px;
     }
@@ -104,6 +104,13 @@
     h1.username span {
       color: #cbbbe6;
       font-weight: normal;
+    }
+
+    .bio {
+      text-align: center;
+      font-size: 14px;
+      color: #6b6378;
+      margin: 0 0 18px 0;
     }
 
     p {
@@ -122,10 +129,10 @@
       margin: 20px 0;
     }
 
-    /* Image & Media Boxes */
+    /* Image & Video Boxes */
     .media-box {
       width: 100%;
-      height: 145px;
+      height: 155px;
       border-radius: 14px;
       overflow: hidden;
       margin-bottom: 18px;
@@ -133,42 +140,15 @@
       position: relative;
     }
 
-    .media-box img {
+    .media-box img,
+    .media-box video {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
     }
 
-    /* Music / Video Play Button Overlay */
-    .play-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(65, 50, 95, 0.35);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-
-    .play-overlay:hover {
-      background: rgba(65, 50, 95, 0.5);
-    }
-
-    .play-circle {
-      width: 48px;
-      height: 48px;
-      border: 2px solid #ffffff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff;
-      font-size: 18px;
-      padding-left: 3px;
-    }
-
-    /* Bottom Social Links & Render Strip */
+    /* Bottom Social Links */
     .socials {
       text-align: right;
       margin-top: 10px;
@@ -185,17 +165,6 @@
     .socials a:hover {
       text-decoration: underline;
     }
-
-    .bottom-strip {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .bottom-strip img {
-      max-width: 100%;
-      height: 85px;
-      object-fit: contain;
-    }
   </style>
 </head>
 <body>
@@ -204,11 +173,11 @@
     
     <!-- Top Banner -->
     <div class="banner">
-      <!-- Replace src with your banner image filename -->
-      <img src="banner.jpg" alt="Banner">
+      <!-- Replace banner.jpg with your uploaded banner filename -->
+      <img src="banner.jpg" alt="">
       <div class="banner-text">
-        <div class="badge">CASTORICE</div>
-        <p class="quote">"servant of death."</p>
+        <div class="badge">REN</div>
+        <p class="quote">""</p>
       </div>
     </div>
 
@@ -217,44 +186,33 @@
       
       <!-- Left Column -->
       <div>
-        <h1 class="username"><span>"</span> azkyl <span>,,</span></h1>
-        <p>Write your main bio or intro text right here. You can talk about yourself, your pronouns, or your vibe.</p>
+        <h1 class="username"><span>"</span> ren <span>,,</span></h1>
+        <p class="bio">20 he/him</p>
         
         <hr class="dashed">
         
-        <p><strong>Interests</strong> list your favorite games, anime, music artists, hobbies, or aesthetics here.</p>
-        
         <div class="media-box">
-          <!-- Replace src with your left-side GIF or image -->
-          <img src="left-pic.gif" alt="Left Aesthetic">
+          <!-- Replace left-pic.gif with your uploaded image/GIF filename -->
+          <img src="left-pic.gif" alt="">
         </div>
         
-        <p><strong>DNI</strong> list your "do not interact" criteria here cleanly and clearly.</p>
+        <p><strong>DNI</strong> “lolicons” “shotacons” also known as pedophiles. under 17. other than that i have no dni just don’t be weird and as long as my mutuals isn’t a bigot idc if they’re “problematic”</p>
       </div>
 
       <!-- Right Column -->
       <div>
         <div class="media-box">
-          <!-- Replace src with your top-right GIF or image -->
-          <img src="right-pic.gif" alt="Right Aesthetic">
+          <!-- Replace right-pic.gif with your uploaded image/GIF filename -->
+          <img src="right-pic.gif" alt="">
         </div>
         
-        <p><strong>BYI</strong> add your "before you interact" notes here so visitors know what to expect.</p>
-        
-        <p><strong>Favz!!</strong> list your favorite characters, comfort shows, or top tracks here.</p>
-        
-        <!-- Interactive Music Player Box -->
-        <div class="media-box" onclick="toggleMusic()">
-          <!-- Replace src with your music cover image -->
-          <img src="music-cover.jpg" alt="Music Cover">
-          <div class="play-overlay">
-            <div class="play-circle" id="play-icon">▶</div>
-          </div>
-          <!-- Replace src with your uploaded .mp3 file -->
-          <audio id="bg-music" src="song.mp3" loop></audio>
+        <!-- Video Box -->
+        <div class="media-box">
+          <!-- Replace video.mp4 with your uploaded video filename -->
+          <video src="video.mp4" controls loop playsinline></video>
         </div>
 
-        <!-- Social Links -->
+        <!-- Social Links (Leave # for now or paste your profile URLs later) -->
         <div class="socials">
           <a href="#" target="_blank">Discord</a>
           <a href="#" target="_blank">Twitter</a>
@@ -265,28 +223,7 @@
 
     </div>
 
-    <!-- Bottom Character Strip -->
-    <div class="bottom-strip">
-      <!-- Replace src with a transparent PNG strip if you want one -->
-      <img src="bottom-renders.png" alt="">
-    </div>
-
   </div>
-
-  <!-- Simple Script to Make the Play Button Work -->
-  <script>
-    function toggleMusic() {
-      const music = document.getElementById('bg-music');
-      const icon = document.getElementById('play-icon');
-      if (music.paused) {
-        music.play();
-        icon.textContent = '❚❚';
-      } else {
-        music.pause();
-        icon.textContent = '▶';
-      }
-    }
-  </script>
 
 </body>
 </html>
