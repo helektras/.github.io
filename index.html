@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>azkyl — profile</title>
+  <style>
+    /* Page Background & Font */
+    body {
+      margin: 0;
+      padding: 40px 15px;
+      background-color: #f3f0f8;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #5a5566;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Main White Card with Soft Lavender Glow */
+    .card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 680px;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 10px 35px rgba(154, 134, 194, 0.25);
+      box-sizing: border-box;
+    }
+
+    /* Top Banner Area */
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 150px;
+      border-radius: 14px;
+      background: linear-gradient(120deg, #dcd2f0, #f5f2fa);
+      overflow: hidden;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 30px;
+      box-sizing: border-box;
+    }
+
+    .banner img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 65%;
+      height: 100%;
+      object-fit: cover;
+      mask-image: linear-gradient(to right, black 60%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
+    }
+
+    .banner-text {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .badge {
+      background: rgba(154, 134, 194, 0.2);
+      color: #7d68a8;
+      padding: 5px 18px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+
+    .quote {
+      font-size: 14px;
+      color: #6b6378;
+      margin: 0;
+    }
+
+    /* Two-Column Grid Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    /* Mobile Responsive Fix */
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Typography & Dividers */
+    h1.username {
+      text-align: center;
+      font-size: 32px;
+      margin: 5px 0 15px 0;
+      color: #8f7ab8;
+      letter-spacing: 1px;
+    }
+
+    h1.username span {
+      color: #cbbbe6;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 13.5px;
+      line-height: 1.6;
+      margin: 0 0 18px 0;
+    }
+
+    strong {
+      color: #4a4458;
+    }
+
+    hr.dashed {
+      border: none;
+      border-top: 2px dashed #dcd4eb;
+      margin: 20px 0;
+    }
+
+    /* Image & Media Boxes */
+    .media-box {
+      width: 100%;
+      height: 145px;
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 18px;
+      background-color: #e6dff2;
+      position: relative;
+    }
+
+    .media-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Music / Video Play Button Overlay */
+    .play-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(65, 50, 95, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .play-overlay:hover {
+      background: rgba(65, 50, 95, 0.5);
+    }
+
+    .play-circle {
+      width: 48px;
+      height: 48px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 18px;
+      padding-left: 3px;
+    }
+
+    /* Bottom Social Links & Render Strip */
+    .socials {
+      text-align: right;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .socials a {
+      color: #8f7ab8;
+      text-decoration: none;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+
+    .socials a:hover {
+      text-decoration: underline;
+    }
+
+    .bottom-strip {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .bottom-strip img {
+      max-width: 100%;
+      height: 85px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    
+    <!-- Top Banner -->
+    <div class="banner">
+      <!-- Replace src with your banner image filename -->
+      <img src="banner.jpg" alt="Banner">
+      <div class="banner-text">
+        <div class="badge">CASTORICE</div>
+        <p class="quote">"servant of death."</p>
+      </div>
+    </div>
+
+    <!-- Main Two-Column Content -->
+    <div class="grid">
+      
+      <!-- Left Column -->
+      <div>
+        <h1 class="username"><span>"</span> azkyl <span>,,</span></h1>
+        <p>Write your main bio or intro text right here. You can talk about yourself, your pronouns, or your vibe.</p>
+        
+        <hr class="dashed">
+        
+        <p><strong>Interests</strong> list your favorite games, anime, music artists, hobbies, or aesthetics here.</p>
+        
+        <div class="media-box">
+          <!-- Replace src with your left-side GIF or image -->
+          <img src="left-pic.gif" alt="Left Aesthetic">
+        </div>
+        
+        <p><strong>DNI</strong> list your "do not interact" criteria here cleanly and clearly.</p>
+      </div>
+
+      <!-- Right Column -->
+      <div>
+        <div class="media-box">
+          <!-- Replace src with your top-right GIF or image -->
+          <img src="right-pic.gif" alt="Right Aesthetic">
+        </div>
+        
+        <p><strong>BYI</strong> add your "before you interact" notes here so visitors know what to expect.</p>
+        
+        <p><strong>Favz!!</strong> list your favorite characters, comfort shows, or top tracks here.</p>
+        
+        <!-- Interactive Music Player Box -->
+        <div class="media-box" onclick="toggleMusic()">
+          <!-- Replace src with your music cover image -->
+          <img src="music-cover.jpg" alt="Music Cover">
+          <div class="play-overlay">
+            <div class="play-circle" id="play-icon">▶</div>
+          </div>
+          <!-- Replace src with your uploaded .mp3 file -->
+          <audio id="bg-music" src="song.mp3" loop></audio>
+        </div>
+
+        <!-- Social Links -->
+        <div class="socials">
+          <a href="#" target="_blank">Discord</a>
+          <a href="#" target="_blank">Twitter</a>
+          <a href="#" target="_blank">TikTok</a>
+          <a href="#" target="_blank">Spotify</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Character Strip -->
+    <div class="bottom-strip">
+      <!-- Replace src with a transparent PNG strip if you want one -->
+      <img src="bottom-renders.png" alt="">
+    </div>
+
+  </div>
+
+  <!-- Simple Script to Make the Play Button Work -->
+  <script>
+    function toggleMusic() {
+      const music = document.getElementById('bg-music');
+      const icon = document.getElementById('play-icon');
+      if (music.paused) {
+        music.play();
+        icon.textContent = '❚❚';
+      } else {
+        music.pause();
+        icon.textContent = '▶';
+      }
+    }
+  </script>
+
+</body>
+</html>
