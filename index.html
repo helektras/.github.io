@@ -140,12 +140,29 @@
       position: relative;
     }
 
+    .video-box {
+      margin-bottom: 6px;
+    }
+
     .media-box img,
     .media-box video {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
+    }
+
+    /* Editor Credit */
+    .video-credit {
+      font-size: 11.5px;
+      color: #8f7ab8;
+      text-align: right;
+      margin: 0 0 16px 0;
+    }
+
+    .video-credit span {
+      color: #7d68a8;
+      font-weight: bold;
     }
 
     /* Bottom Social Links */
@@ -196,7 +213,7 @@
           <img src="left-pic.gif" alt="">
         </div>
         
-        <p><strong>DNI</strong> “lolicons” “shotacons” also known as pedophiles. under 17. other than that i have no dni just don’t be weird and as long as my mutuals isn’t a bigot idc if they’re “problematic”</p>
+        <p><strong>DNI</strong> Anyone who supports or engages in child exploitation or harm, or individuals under 17. Other than that, standard boundary lines apply; as long as mutuals are not bigoted, general interactions are welcome.</p>
       </div>
 
       <!-- Right Column -->
@@ -207,10 +224,11 @@
         </div>
         
         <!-- Video Box -->
-        <div class="media-box">
+        <div class="media-box video-box">
           <!-- Replace video.mp4 with your uploaded video filename -->
           <video src="video.mp4" controls loop playsinline></video>
         </div>
+        <p class="video-credit">credits to <span>@vastuan_vfx</span></p>
 
         <!-- Social Links (Leave # for now or paste your profile URLs later) -->
         <div class="socials">
